@@ -8,7 +8,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+//<span>N</span><span>O</span><span>M</span><span>A</span><span>D</span><span>.</span>
+.dark-view{
+    font-size:24px;
+    position:absolute;
+    z-index:3;
+    right:1em;
+    top:1em;
+}
 .logo-container{
     width:100vw;
     height:100vh;
@@ -16,17 +23,25 @@
     display:flex;
     place-items: center;
     justify-content: center;
+    transition: all .5s;
     #logo{
         font-size: 36px;
-        letter-spacing: .5rem;
+        letter-spacing: .3rem;
         z-index: 1;
         position: absolute;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        //gap:2rem;
+        text-shadow: 0 0 10px white;
+        
     }
     #logo-img{
         z-index:0;
         position: absolute;
         width:100%;
         height: 100%;
+        transition: all 1s;
     }
     
 }

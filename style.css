@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+.dark-view {
+  font-size: 24px;
+  position: absolute;
+  z-index: 3;
+  right: 1em;
+  top: 1em;
+}
+
 .logo-container {
   width: 100vw;
   height: 100vh;
@@ -16,18 +24,24 @@
   display: flex;
   place-items: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 .logo-container #logo {
   font-size: 36px;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   z-index: 1;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 10px white;
 }
 .logo-container #logo-img {
   z-index: 0;
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: all 1s;
 }
 
 @media screen and (max-width: 850px) {
